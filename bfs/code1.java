@@ -40,8 +40,12 @@ class Graph{
         g.addEdge(2, 5);
 
         System.out.println("BFS starting from node 0:");
-        g.BFS(0); // Expected Output: 0 1 2 3 4 5
+        g.BFS(0); 
     }
 }
-
+/*
+Output:
+BFS starting from node 0:
+0 1 2 3 4 5 
+*/
 
