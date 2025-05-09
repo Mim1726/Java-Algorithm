@@ -56,3 +56,8 @@ public class Main{
         }
     }
 }
+/*
+can start from any node
+output: 
+5 4 2 3 1 0 
+*/
