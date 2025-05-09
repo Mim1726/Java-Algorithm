@@ -45,3 +45,7 @@ public class Main{
     }
 
 }
+/*
+output: 
+0 1 3 4 2 
+*/
