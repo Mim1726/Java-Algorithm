@@ -90,3 +90,9 @@ public class DijkstraShortestPath {
         System.out.println();
     }
 }
+
+/*
+Output: 
+Shortest distance from 0 to 5 is: 8
+Path: 0 -> 2 -> 1 -> 3 -> 4 -> 5
+*/
