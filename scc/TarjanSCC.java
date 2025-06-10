@@ -1,3 +1,5 @@
+package scc;
+
 import java.util.*;
 
 public class TarjanSCC {
