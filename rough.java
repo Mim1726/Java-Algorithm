@@ -1,0 +1,59 @@
+import java.util.*;
+
+public class rough{
+    int v;
+    List<List<Integer>> adj;
+    rough(int v){
+        this.v=v;
+        adj=new ArrayList<>();
+        for(int i=0;i<v;i++){
+            adj.add(new ArrayList<>());
+        }
+    }
+
+    void addEdge(int u,int v){
+        adj.get(u).add(v);
+    }
+
+    void topologicalSort(){
+        boolean[] visited=new boolean[v];
+        Stack<Integer> stack=new Stack<>();
+
+        for(int i=0;i<v;i++){
+            if(!visited[i]){
+                dfs(i, visited, stack);
+            }
+        }
+
+        while(!stack.isEmpty()){
+            System.out.print(stack.pop()+" ");
+        }
+    }
+
+    void dfs(int node,boolean[] visited,Stack<Integer> stack){
+        visited[node]=true;
+
+        for(int neighbor:adj.get(node)){
+            if(!visited[neighbor]){
+                dfs(neighbor, visited, stack);
+            }
+        }
+
+        stack.push(node);
+    }
+
+
+
+    public static void main(String[] args){
+        rough g=new rough(6);
+        
+        g.addEdge(5, 2);
+        g.addEdge(5, 0);
+        g.addEdge(4, 0);
+        g.addEdge(4, 1);
+        g.addEdge(2, 3);
+        g.addEdge(3, 1);
+
+        g.topologicalSort();
+    }
+}

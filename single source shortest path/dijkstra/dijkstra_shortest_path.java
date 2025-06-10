@@ -21,7 +21,7 @@ class Edge {
     }
 }
 
-public class DijkstraShortestPath {
+public class dijkstra_shortest_path {
     static final int INF = Integer.MAX_VALUE;
 
     public static void dijkstra(List<List<Edge>> adj, int src, int[] dist, int[] parent) {

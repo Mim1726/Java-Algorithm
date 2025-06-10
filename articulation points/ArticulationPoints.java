@@ -30,6 +30,7 @@ public class ArticulationPoints{
                 dfs(i,-1);
             }
         }
+        //System.out.println(tin[0]);
         System.out.println("Articulation Points: "+articulationPoints);
     }
 
@@ -63,12 +64,26 @@ public class ArticulationPoints{
     public static void main(String[] args){
         int n=5;
         ArticulationPoints graph=new ArticulationPoints(n);
-
+        /*
         graph.addEdge(0, 1);
         graph.addEdge(1, 2);
         graph.addEdge(1, 3);
         graph.addEdge(3, 4);
+        */
 
+        graph.addEdge(1, 2);
+        graph.addEdge(1, 3);
+        graph.addEdge(2, 3);
+        graph.addEdge(3, 4);
+        graph.addEdge(4, 5);
+        graph.addEdge(4, 6);
+        graph.addEdge(5, 6);
+        graph.addEdge(6, 7);
+        graph.addEdge(7, 8);
+        graph.addEdge(7, 9);
+        graph.addEdge(8, 9);
+        graph.addEdge(9, 10);
+        
         graph.findArticulationPoints();
     }
 }

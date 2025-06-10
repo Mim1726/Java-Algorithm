@@ -33,9 +33,9 @@ public class Main{
         void dfs(int node,boolean[] visited,Stack<Integer> stack){
             visited[node]=true;
 
-            for(int neighbour:adj.get(node)){
-                if(!visited[neighbour]){
-                    dfs(neighbour, visited, stack);
+            for(int neighbor:adj.get(node)){
+                if(!visited[neighbor]){
+                    dfs(neighbor, visited, stack);
                 }
             }
 

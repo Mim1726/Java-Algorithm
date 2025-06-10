@@ -1,0 +1,3 @@
+//write code for dfs in lexicographical order
+//find low value of every node ~/
+//scc-strongly connected component ~/
