@@ -51,9 +51,10 @@ public class low_value{
         }
     }
     public static void main(String[] args){
-        int v=10;
+        int v=6;
         low_value l=new low_value(v);
 
+        /* 
         l.addEdge(1, 2);
         l.addEdge(1, 3);
         l.addEdge(2, 3);
@@ -66,6 +67,15 @@ public class low_value{
         l.addEdge(7, 9);
         l.addEdge(8, 9);
         l.addEdge(9, 10);
+        */
+
+        l.addEdge(1, 2);
+        l.addEdge(1, 3);
+        l.addEdge(2, 4);
+        l.addEdge(3, 4);
+        l.addEdge(4, 5);
+        l.addEdge(4, 6);
+        l.addEdge(5, 6);
 
         l.lowValue();
     }

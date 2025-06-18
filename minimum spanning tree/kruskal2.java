@@ -48,7 +48,7 @@ class DisjointSet {
     }
 }
 
-public class KruskalsAlgorithm {
+public class kruskal2 {
 
     public static int kruskalMST(int n, List<Edge> edges) {
         Collections.sort(edges);

@@ -57,7 +57,7 @@ public class Dijkstra{
 
         System.out.println("Shortest distances from source 0:");
         for(int i=0;i<v;i++){
-            System.out.println("To node "+i+"="+dist[i]);
+            System.out.println("To node "+i+" = "+dist[i]);
         }
     }
 }
