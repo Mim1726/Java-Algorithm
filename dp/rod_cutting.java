@@ -1,16 +1,17 @@
-import java.util.*;
+package dp;
 
-public class rough{
+public class rod_cutting {
     public static int cutRod(int[] prices, int n){
         int[] dp=new int[n+1];
 
         for(int i=1;i<=n;i++){
-            int max=Integer.MIN_VALUE;
+            int maxVal=Integer.MIN_VALUE;
             for(int j=0;j<i;j++){
-                max=Math.max(max, prices[j]+dp[i-j-1]);
+                maxVal=Math.max(maxVal, prices[j]+dp[i-j-1]);
             }
-            dp[i]=max;
+            dp[i]=maxVal;
         }
+
         return dp[n];
     }
 

@@ -10,7 +10,7 @@ class Node {
     }
 }
 
-public class Main {
+public class binary_search_tree {
     static Node insert(Node root, int x) {
         if (root == null) {
             return new Node(x);

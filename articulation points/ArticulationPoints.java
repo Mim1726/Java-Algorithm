@@ -62,7 +62,7 @@ public class ArticulationPoints{
     }
 
     public static void main(String[] args){
-        int n=5;
+        int n=10;
         ArticulationPoints graph=new ArticulationPoints(n);
         /*
         graph.addEdge(0, 1);
@@ -82,7 +82,7 @@ public class ArticulationPoints{
         graph.addEdge(7, 8);
         graph.addEdge(7, 9);
         graph.addEdge(8, 9);
-        graph.addEdge(9, 10);
+        graph.addEdge(8, 10);
         
         graph.findArticulationPoints();
     }

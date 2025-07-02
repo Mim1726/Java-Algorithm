@@ -43,7 +43,7 @@ class DSU {
     }
 }
 
-public class KruskalAlgorithm {
+public class Kruskal {
     public static int kruskalMST(int n, List<Edge> edges) {
         Collections.sort(edges); // Sort edges by weight
         DSU dsu = new DSU(n);
@@ -61,14 +61,31 @@ public class KruskalAlgorithm {
     }
 
     public static void main(String[] args) {
-        int n = 4; // Number of vertices
+        int n = 9; // Number of vertices
 
         List<Edge> edges = new ArrayList<>();
+        /*
         edges.add(new Edge(0, 1, 1));
         edges.add(new Edge(0, 2, 3));
         edges.add(new Edge(1, 2, 1));
         edges.add(new Edge(1, 3, 4));
         edges.add(new Edge(2, 3, 1));
+        */
+
+        edges.add(new Edge(1, 2, 4));
+        edges.add(new Edge(1, 8, 8));
+        edges.add(new Edge(2, 3, 8));
+        edges.add(new Edge(2, 8, 11));
+        edges.add(new Edge(3, 4, 7));
+        edges.add(new Edge(3, 6, 4));
+        edges.add(new Edge(3, 9, 2));
+        edges.add(new Edge(4, 6, 14));
+        edges.add(new Edge(4, 5, 9));
+        edges.add(new Edge(5, 6, 10));
+        edges.add(new Edge(6, 7, 2));
+        edges.add(new Edge(9, 8, 7));
+        edges.add(new Edge(9, 7, 6));
+        edges.add(new Edge(7, 8, 1));
 
         int totalWeight = kruskalMST(n, edges);
         System.out.println("Total Weight of MST: " + totalWeight);
