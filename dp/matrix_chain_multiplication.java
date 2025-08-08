@@ -2,7 +2,6 @@ package dp;
 
 public class matrix_chain_multiplication {
 
-    // Function to compute minimum multiplication cost
     public static int matrixChainOrder(int[] dims) {
         int n = dims.length;
 
@@ -30,7 +29,8 @@ public class matrix_chain_multiplication {
 
     public static void main(String[] args) {
         // Example: 4 matrices: 10x20, 20x30, 30x40, 40x30
-        int[] dimensions = {10, 20, 30, 40, 30};
+        //int[] dimensions = {10, 20, 30, 40, 30};
+        int[] dimensions = {4, 3, 5, 2, 6};
 
         int minCost = matrixChainOrder(dimensions);
         System.out.println("Minimum number of multiplications: " + minCost);

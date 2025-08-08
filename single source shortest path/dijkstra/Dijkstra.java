@@ -7,9 +7,9 @@ public class Dijkstra{
             this.node=node;
             this.weight=weight;
         }
-    }
+    
 
-    public static void dijkstra(int source, List<List<Pair>> adj,int[] dist){
+    public static void dijkstra(int source, List<List<Pair>> adj, int[] dist){
         int n=adj.size();
         Arrays.fill(dist, Integer.MAX_VALUE);
         dist[source]=0;

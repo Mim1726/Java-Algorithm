@@ -30,23 +30,23 @@ public class longest_increasing_sequence {
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         // Input
         System.out.println("Enter the number of elements:");
-        int n = scanner.nextInt();
+        int n = sc.nextInt();
         int[] arr = new int[n];
 
         System.out.println("Enter the elements:");
         for (int i = 0; i < n; i++) {
-            arr[i] = scanner.nextInt();
+            arr[i] = sc.nextInt();
         }
 
         // Compute LIS length
         int result = lengthOfLIS(arr);
         System.out.println("Length of Longest Increasing Subsequence: " + result);
 
-        scanner.close();
+        sc.close();
     }
 }
 
