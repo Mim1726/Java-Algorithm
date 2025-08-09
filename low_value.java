@@ -53,7 +53,7 @@ public class low_value{
     public static void main(String[] args){
         int v=7;
         low_value l=new low_value(v);
-
+        
         l.addEdge(1, 2);
         l.addEdge(2, 3);
         l.addEdge(3, 4);
